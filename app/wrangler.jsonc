@@ -1,6 +1,6 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "ubiq-next-cyon-cf",
+	"name": "test-ubiq-next-cyon-cf",
 	"main": "worker.ts",
 	"compatibility_date": "2026-08-25",
 	"compatibility_flags": [
@@ -20,7 +20,7 @@
 	"services": [
 		{
 			"binding": "WORKER_SELF_REFERENCE",
-			"service": "ubiq-next-cyon-cf"
+			"service": "test-ubiq-next-cyon-cf"
 		}
 	],
 	"durable_objects": {
@@ -40,14 +40,13 @@
 	"r2_buckets": [
 		{
 			"binding": "NEXT_INC_CACHE_R2_BUCKET",
-			"bucket_name": "ubiq-next-cyon-cf-next-cache"
+			"bucket_name": "test-ubiq-next-cyon-cf-next-cache"
 		}
 	],
 	"d1_databases": [
 		{
 			"binding": "NEXT_TAG_CACHE_D1",
-			"database_name": "ubiq-next-cyon-cf-next-tag-cache",
-			"database_id": "cfc112dc-876f-420b-8155-2e32654f9dbf",
+			"database_name": "test-ubiq-next-cyon-cf-next-tag-cache",
 			"migrations_dir": "migrations"
 		}
 	],
